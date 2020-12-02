@@ -38,7 +38,7 @@ public class Task5 implements Task {
         	list.add(e);
         	set.add(e);
         }
-        
+
         System.out.println(list);
         System.out.println(set);
 
