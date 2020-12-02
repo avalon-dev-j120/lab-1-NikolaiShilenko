@@ -1,6 +1,8 @@
 package ru.avalon.java.j20.labs.tasks;
 
 import ru.avalon.java.j20.labs.Task;
+import ru.avalon.java.j20.labs.models.Fibonacci;
+import ru.avalon.java.j20.labs.models.Numbers;
 
 import java.util.Iterator;
 
@@ -10,9 +12,17 @@ import java.util.Iterator;
  * <p>Тема: "Изучение интерфейсов {@link Iterable} и {@link Iterator}".
  */
 public class Task3 implements Task {
+	
+	private final Fibonacci fib = new Fibonacci(20);
 
     @Override
     public void run() {
+    	
+    	System.out.println();
+    	System.out.println("Задача 3");
+    	int sum = (int)Numbers.sum(fib.getArray());
+    	System.out.println("Сумма значений в массиве: " + sum);
+    	
         /*
          * TODO(Студент): Выполнить задание №3
          *

@@ -1,5 +1,7 @@
 package ru.avalon.java.j20.labs.tasks;
 
+import java.util.Arrays;
+
 import ru.avalon.java.j20.labs.Task;
 import ru.avalon.java.j20.labs.core.RandomArrayFactory;
 import ru.avalon.java.j20.labs.models.Numbers;
@@ -24,10 +26,18 @@ public class Task1 implements Task {
      */
     @Override
     public void run() {
-        int[] array = arrayFactory.getInstance(20);
+    	
+    	System.out.println();
+    	System.out.println("Задача 1");
+    	
+        Integer[] array = arrayFactory.getInstance(20);
+        System.out.println(Arrays.toString(array));
         int min = Numbers.min(array);
+        System.out.println("минимальное значение в массиве: " + min);
         int max = Numbers.max(array);
+        System.out.println("максимальное значение в массиве: " + max);
         double avg = Numbers.avg(array);
+        System.out.println("среднее арифметическое: " + avg);
         /*
          * TODO(Студент): Выполните задание №1
          *
