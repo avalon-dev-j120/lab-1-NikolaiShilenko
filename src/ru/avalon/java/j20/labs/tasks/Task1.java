@@ -28,16 +28,17 @@ public class Task1 implements Task {
     public void run() {
     	
     	System.out.println();
-    	System.out.println("Задача 1");
+    	System.out.println("Задача 1 :");
+    	System.out.println("Поиск минимального, максимального, среднего арифметического в массиве случайных чисел.");
     	
         Integer[] array = arrayFactory.getInstance(20);
-        System.out.println(Arrays.toString(array));
-        int min = Numbers.min(array);
+        System.out.println("Дан массив чисел: " + Arrays.toString(array));
+        double min = Numbers.min(array);
         System.out.println("минимальное значение в массиве: " + min);
-        int max = Numbers.max(array);
+        double max = Numbers.max(array);
         System.out.println("максимальное значение в массиве: " + max);
         double avg = Numbers.avg(array);
-        System.out.println("среднее арифметическое: " + avg);
+        System.out.println("среднее арифметическое всех чисел в массиве: " + avg);
         /*
          * TODO(Студент): Выполните задание №1
          *

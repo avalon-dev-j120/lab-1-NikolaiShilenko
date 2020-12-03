@@ -19,9 +19,13 @@ public class Task3 implements Task {
     public void run() {
     	
     	System.out.println();
-    	System.out.println("Задача 3");
-    	int sum = (int)Numbers.sum(fib.getArray());
-    	System.out.println("Сумма значений в массиве: " + sum);
+    	System.out.println("Задача 3 :");
+    	
+    	int count = 0;
+    	for(Integer i : fib) {
+    		count += i;
+    	}
+    	System.out.println("Сумма первых 20-ти чисел последовательности Фибоначчи: " + count);
     	
         /*
          * TODO(Студент): Выполнить задание №3

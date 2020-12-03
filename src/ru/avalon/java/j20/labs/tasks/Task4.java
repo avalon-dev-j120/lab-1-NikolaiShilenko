@@ -17,12 +17,18 @@ public class Task4 implements Task {
     public void run() {
     	
     	System.out.println();
-    	System.out.println("Задача 4");
+    	System.out.println("Задача 4 :");
+    	System.out.println("Вызов методов hashCode() и equals(), переопределённых для класса Person");
+    	System.out.println("Даны объекты класса Person");
+    	System.out.println("Имя объектов: Иван; Фамилия объектов: Иванов");
     	
         Person a = new Person("Иван", "Иванов");
         Person b = new Person("Иван", "Иванов");
         boolean isEqual = a.equals(b);
-        System.out.println(isEqual);
+        boolean hashIsEqual = a.hashCode() == b.hashCode();
+        System.out.println("Вызов метода equals() возвращает: " + isEqual);
+        System.out.println("Вызов метода hashCode() возвращает: " + hashIsEqual);
+        
         /*
          * TODO(Студент): Выполните задание №4
          *

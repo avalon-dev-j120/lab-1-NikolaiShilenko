@@ -49,7 +49,7 @@ public class Point <T extends Number>{
      *              дистанцию.
      * @return дистанция между точками
      */
-    public double distanceTo(Point point) {
+    public double distanceTo(Point<?> point) {
         float dx = (float)(x.doubleValue() - point.x.doubleValue());
         float dy = (float)(y.doubleValue() - point.y.doubleValue());
         return Math.sqrt(dx * dx + dy * dy);

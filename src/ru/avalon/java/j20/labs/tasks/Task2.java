@@ -17,10 +17,14 @@ public class Task2 implements Task {
     public void run() {
     	
     	System.out.println();
-    	System.out.println("Задача 2");
-    	Point<Float> point = new Point(6, 7);
-    	Point<Integer> point2 = new Point(3, 5);
-    	System.out.println(point.distanceTo(point2));
+    	System.out.println("Задача 2 :");
+    	System.out.println("Вычисление дистанции между двумя точками на плоскости.");
+    	
+    	Point<Float> a = new Point<>(6.0f, 7.0f);
+    	Point<Integer> b = new Point<>(3, 5);
+    	System.out.println(
+    			"Даны две точки с координатами: " + "(" + a.getX() + ";" + a.getY() + ") и (" + b.getX() + ";" + b.getY() + ")");
+    	System.out.println("Дистанция между точками: " + a.distanceTo(b));
         /*
          * TODO(Студент): Выполнять задание №2
          *

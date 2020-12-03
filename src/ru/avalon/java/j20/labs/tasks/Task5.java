@@ -4,6 +4,7 @@ import ru.avalon.java.j20.labs.Task;
 import ru.avalon.java.j20.labs.core.RandomArrayFactory;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
@@ -27,10 +28,13 @@ public class Task5 implements Task {
     public void run() {
     	
     	System.out.println();
-    	System.out.println("Задача 4");
+    	System.out.println("Задача 5 :");
+    	System.out.println("Изучение отличия между списками и наборами.");
+    	
     	
         final Integer[] array = arrayFactory.getInstance(20);
-
+    	System.out.println("Дан массив чисел: " + Arrays.toString(array));
+    	System.out.println("Элементы массива помещены в объекты классов: ArrayList и LinkedHashSet.");
         List<Integer> list = new ArrayList<>();
         Set<Integer> set = new LinkedHashSet<>();
         
@@ -39,8 +43,8 @@ public class Task5 implements Task {
         	set.add(e);
         }
 
-        System.out.println(list);
-        System.out.println(set);
+        System.out.println("Содержимое ArrayList: " + list);
+        System.out.println("Содержимое LinkedHashSet: " + set);
 
         /**
          * TODO(Студент): Выполните задание №5
