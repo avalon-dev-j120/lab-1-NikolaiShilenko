@@ -86,6 +86,7 @@ public class Fibonacci implements Iterable<Integer> {
 			}
 			cursor++;
 			return req.array[cursor];
+
 		}
 	}
 
