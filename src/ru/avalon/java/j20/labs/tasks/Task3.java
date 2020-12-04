@@ -14,6 +14,7 @@ import java.util.Iterator;
 public class Task3 implements Task {
 
 	private final Fibonacci fib = new Fibonacci(20);
+	Iterator itr = fib.iterator();
 
 	@Override
 	public void run() {
@@ -21,7 +22,16 @@ public class Task3 implements Task {
 		System.out.println();
 		System.out.println("Задача 3 :");
 
+		System.out.println("Итерируемся вызывая методы объекта итератора.");
 		int count = 0;
+		while (itr.hasNext()) {
+			count += (int) itr.next();
+		}
+		System.out.println("Сумма первых 20-ти чисел последовательности Фибоначчи: " + count);
+		System.out.println();
+		
+		System.out.println("Итерируемся с использованием цикла foreach.");
+		count = 0;
 		for (Integer i : fib) {
 			count += i;
 		}
